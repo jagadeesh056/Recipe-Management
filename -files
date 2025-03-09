@@ -1,0 +1,16 @@
+[33mcommit 84e68304a361d5c6a57956c12fdd4f5ab8bfbfee[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: jagadeesh056 <jagadeeshsiddani01@gmail.com>
+Date:   Sun Mar 9 15:37:58 2025 +0530
+
+    first commit
+
+ .gitignore                    |    5 [32m+[m
+ backend/middlewares/logger.js |    4 [32m+[m
+ backend/models/Recipe.js      |   31 [32m+[m
+ backend/package-lock.json     | 1327 [32m+++++++++++++++++++++++++++++++++++++++++[m
+ backend/package.json          |   22 [32m+[m
+ backend/routes/recipes.js     |   93 [32m+++[m
+ backend/seeds/seed.js         |  143 [32m+++++[m
+ backend/server.js             |   78 [32m+++[m
+ frontend                      |    1 [32m+[m
+ 9 files changed, 1704 insertions(+)
