@@ -52,7 +52,6 @@ const handleSurpriseMe = async () => {
 
   return (
     <div className="app-container">
-      {/* Navigation Bar */}
       <nav className="app-nav">
         <Link to="/" className="nav-brand">
           🍳 Recipe Manager
@@ -67,9 +66,7 @@ const handleSurpriseMe = async () => {
         </div>
       </nav>
 
-      {/* Main Content */}
       <Routes>
-        {/* Home Route */}
         <Route
           path="/"
           element={
@@ -80,17 +77,11 @@ const handleSurpriseMe = async () => {
                   Surprise Me!
                 </button>
               </div>
-
-              {/* Recipe List */}
               <RecipeList recipes={recipes} onUpdate={loadRecipes} />
             </>
           }
         />
-
-        {/* New Recipe Form */}
         <Route path="/new" element={<RecipeForm onSuccess={handleNewRecipe} />} />
-
-        {/* Recipe Details */}
         <Route path="/recipe/:id" element={<RecipeDetails />} />
       </Routes>
     </div>

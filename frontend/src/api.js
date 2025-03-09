@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api/recipes',
+  baseURL: 'https://recipe-management-xyz.vercel.app/api/recipes',
 });
 
 export const fetchRandomRecipe = async () => {
