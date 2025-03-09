@@ -1,0 +1,14 @@
+.recipe-list-container {
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .recipe-list-container {
+      padding: 10px;
+    }
+  }

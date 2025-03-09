@@ -1,0 +1,31 @@
+.recipe-item {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    cursor: move;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .recipe-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .recipe-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  .recipe-item p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .recipe-item-dragging {
+    opacity: 0.5;
+    background-color: #f8f9fa;
+    border: 2px dashed #007bff;
+  }

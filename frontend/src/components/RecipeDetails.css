@@ -1,0 +1,129 @@
+.recipe-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .section-title {
+    color: #2c3e50;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 0.5rem;
+  }
+  
+  .ingredient-list,
+  .instruction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .recipe-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .recipe-details-container h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .metadata {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+  
+  .content-section {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    color: #2c3e50;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .ingredient-list,
+  .instruction-list {
+    padding-left: 20px;
+  }
+  
+  .list-item {
+    padding: 8px 0;
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+  
+  .instruction-list {
+    counter-reset: step-counter;
+  }
+  
+  .instruction-list .list-item {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .instruction-list .list-item::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #007bff;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 0.9rem;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  
+  @media (max-width: 768px) {
+    .recipe-details-container {
+      padding: 20px;
+      margin: 10px;
+    }
+    
+    .metadata {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
